@@ -1,5 +1,5 @@
 /* HOME styles */
-body {
+body {                            /*body style for whole site*/
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,9 +7,9 @@ body {
     
     
 }
+    
 
-
-header {
+header {                          /*header style*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,6 +66,15 @@ nav a {
     align-items: center;
     background-color: #21212177; 
 
+}
+
+.intro-paragraph {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 15px auto;
+    color: #000000;
+    width: 80%;
+    line-height: 1.5;
 }
 
 .home-image img {
@@ -482,8 +491,25 @@ footer {
 
 /* page 7 */
 
-.faq-section {
+.faq {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .faq h2 {
+    color: #000000;
+  }
+  
+  .faq .question {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .faq .answer {
+    font-size: 1rem;
     margin-bottom: 20px;
+    line-height: 1.5;
   }
   
   .question {
@@ -554,4 +580,103 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #ff0000;
+}
+
+/* General Reset for Responsive Design */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .intro-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .explore-options {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .option {
+        width: 100%;
+    }
+
+    .product-grid, .game-container {
+        grid-template-columns: 1fr;
+    }
+
+    .game img {
+        max-height: 200px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+
+    .details table {
+        width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    nav ul {
+        gap: 5px;
+    }
+
+    .intro-text ul {
+        font-size: 0.9rem;
+    }
+
+    .intro-paragraph {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
 }
