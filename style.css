@@ -1,12 +1,14 @@
 /* HOME styles */
-body {                            /*body style for whole site*/
+                          
+
+body {                               /*body style for whole site*/
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #000000;
-    
-    
+    line-height: 1.6;
 }
+
     
 
 header {                          /*header style*/
@@ -18,6 +20,7 @@ header {                          /*header style*/
     color: rgb(66, 81, 112);
 }
 
+ /*single styling(dry standards)used for logo,navigation bar and social icons*/
 
 .logo {
     margin-left: 20px;
@@ -119,7 +122,7 @@ nav a {
 }
 
 
-.read-more {
+.read-more {                   /*read more button styling*/
     display: inline-block;
     background-color: #ff0000;
     color: #fff;
@@ -188,7 +191,7 @@ nav a {
     font-weight: bolder;
 }
 
-.locations {
+.locations {                /*store locations*/
     display: flex;
     justify-content: space-around;
 }
@@ -216,7 +219,7 @@ nav a {
     text-align: center;
   }
   
-  .details table {
+  .details table {              /*table showing the details, opening hours and map links to the stores*/
     margin: 0 auto;
     border-collapse: collapse;
     width: 80%;
@@ -275,7 +278,7 @@ tbody tr:nth-child(odd) {
     }
 }
 
-/* page 3 and 4 */
+/* page 3 and 4 */  /*common styling for perpherals and consoles*/
 .product-grid {
     display: flex;
     flex-wrap: wrap;
@@ -356,7 +359,7 @@ footer {
     }
 }
 
-/* page 5 */
+/* page 5 */   /*games page styling*/
 
 .center-heading {
     text-align: center; 
@@ -388,7 +391,7 @@ footer {
     transform: scale(1.1);
 }
 
-.game-details {
+.game-details {    /*animation that show games details when hovered over*/
     position: absolute;
     top: 0;
     left: 0;
@@ -410,7 +413,7 @@ footer {
 
 
 
-/* page 6 */
+/* page 6 */  /*upcoming games*/
 
 .coming-soon {
     text-align: center;
@@ -424,7 +427,7 @@ footer {
     position: relative; 
   }
   
-  .coming-soon .main-image video {
+  .coming-soon .main-image video {    /*short loop video for an upcoming game*/
     width: 100%;
     height: auto;
    
@@ -466,7 +469,7 @@ footer {
     margin-bottom: 10px;
   }
   
-  .release-date {
+  .release-date {    /*animations to show the release date when hovered over*/
     display: none; 
     position: inherit;
     bottom: 0;
@@ -489,7 +492,7 @@ footer {
 }    
 
 
-/* page 7 */
+/* page 7 */  /*queries and FAQS */
 
 .faq {
     text-align: center;
@@ -582,16 +585,9 @@ button[type="submit"]:hover {
     background-color: #ff0000;
 }
 
-/* General Reset for Responsive Design */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #000000;
-    line-height: 1.6;
-}
 
-/* Responsive Styles */
+
+/* Responsive Styles for any device compatability */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -656,7 +652,7 @@ body {
     }
 }
 
-/* Extra Small Devices */
+/* for Smaller Devices */
 @media (max-width: 480px) {
     nav ul {
         gap: 5px;
@@ -680,3 +676,26 @@ body {
         font-size: 0.9rem;
     }
 }
+@media (max-width: 480px) {
+  
+    .logo img {
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      font-size: 14px;
+    }
+  
+    section.description {
+      padding: 15px;
+    }
+  
+    section.locations .location img {
+      max-width: 90%;
+    }
+  
+    table {
+      font-size: 12px;
+    }
+  }
+  
